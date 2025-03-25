@@ -19,7 +19,12 @@ Uma ferramenta de linha de comando para gerenciar tarefas com suporte a notas, f
 
 3. Torne o CLI executável:
    ```bash
-   npm run make-executable
+   chmod +x index.js
+   ```
+
+4. Adicione o CLI globalmente ao sistema:
+   ```bash
+   npm link
    ```
 
 ---

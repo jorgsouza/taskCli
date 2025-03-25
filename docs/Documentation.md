@@ -5,6 +5,33 @@ O Task CLI é uma ferramenta de linha de comando para gerenciar tarefas. Ele uti
 
 ---
 
+## Instalação
+
+1. Clone o repositório:
+   ```bash
+   git clone <url-do-repositorio>
+   cd taskCli
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Torne o CLI executável:
+   ```bash
+   chmod +x index.js
+   ```
+
+4. Adicione o CLI globalmente ao sistema:
+   ```bash
+   npm link
+   ```
+
+Agora você pode usar o comando `task` globalmente no terminal.
+
+---
+
 ## Estrutura do Projeto
 - **application/**: Contém a lógica de aplicação, como criação, listagem, conclusão e exclusão de tarefas.
 - **cli/**: Implementa a interface de linha de comando usando o pacote `commander`.

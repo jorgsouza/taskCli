@@ -6,6 +6,12 @@ import groupBy from "lodash.groupby";
 // Caso queira o "Today"
 const today = dayjs().format("YYYY-MM-DD");
 
+// Função para destacar datas na descrição
+function highlightDates(description) {
+  const dateRegex = /\b\d{2}\.\d{2}\.\d{4}\b/g; // Formato: DD.MM.AAAA
+  return description.replace(dateRegex, (match) => chalk.blue(match));
+}
+
 export async function listTasks() {
   const tasks = await TaskRepository.getAll();
 
@@ -41,11 +47,11 @@ export async function listTasks() {
       const indexDisplay = chalk.gray(`${globalIndex++}.`); // Incrementa o índice global
 
       let symbol = chalk.red("▢");
-      let statusText = chalk.gray(task.description);
+      let statusText = highlightDates(task.description); // Aplica destaque às datas
 
       if (task.done) {
         symbol = chalk.green("✔");
-        statusText = chalk.strikethrough(task.description); // Aplica o risco ao texto
+        statusText = chalk.strikethrough(highlightDates(task.description)); // Aplica o risco ao texto
         done++;
       }
 
