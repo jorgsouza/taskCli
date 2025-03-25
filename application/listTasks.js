@@ -45,7 +45,7 @@ export async function listTasks() {
 
       if (task.done) {
         symbol = chalk.green("✔");
-        statusText = chalk.strikethrough(task.description);
+        statusText = chalk.strikethrough(task.description); // Aplica o risco ao texto
         done++;
       }
 
