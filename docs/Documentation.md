@@ -71,6 +71,8 @@ Define os comandos disponíveis:
 - `done <id>`: Marca uma tarefa como concluída.
 - `delete [id]`: Exclui uma tarefa ou todas as concluídas com `--completed`.
 - `record <tasks...>`: Grava uma lista de tarefas.
+- `favorite <id>`: Marca ou desmarca uma tarefa como favorita.
+- `edit <id> <description>`: Edita a descrição de uma tarefa existente.
 
 ---
 
@@ -90,6 +92,7 @@ Agrupa tarefas por data de criação e exibe informações como:
 - Total de tarefas.
 - Tarefas concluídas.
 - Notas.
+- Tarefas favoritas (marcadas com ★).
 
 ---
 
@@ -98,6 +101,30 @@ Agrupa tarefas por data de criação e exibe informações como:
 - `completeTask.js`: Marca uma tarefa como concluída.
 - `deleteTask.js`: Exclui tarefas.
 - `recordTasks.js`: Grava múltiplas tarefas.
+- `editTask.js`: Edita a descrição de uma tarefa existente.
+- `favoriteTask.js`: Marca ou desmarca uma tarefa como favorita.
+
+---
+
+## Exemplos de Uso
+
+### Editar uma tarefa existente
+```bash
+task edit 2 "Nova descrição para a tarefa"
+```
+Este comando alterará a descrição da tarefa número 2 para "Nova descrição para a tarefa".
+
+### Marcar uma tarefa como favorita
+```bash
+task favorite 3
+```
+Este comando alterna o status de favorito da tarefa número 3. Se já estiver marcada como favorita, será desmarcada, e vice-versa.
+
+### Adicionar uma tarefa com data específica
+```bash
+task add "Reunião de equipe 22.04.2025"
+```
+As datas no formato DD.MM.YYYY são automaticamente destacadas em azul na listagem.
 
 ---
 

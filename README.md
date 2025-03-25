@@ -68,6 +68,16 @@ Uma ferramenta de linha de comando para gerenciar tarefas com suporte a notas, f
   task record "Tarefa 1" "Tarefa 2"
   ```
 
+- **Marcar/desmarcar como favorito**:
+  ```bash
+  task favorite <id>
+  ```
+
+- **Editar uma tarefa**:
+  ```bash
+  task edit <id> "Nova descrição da tarefa"
+  ```
+
 ---
 
 ## Exemplo de Saída
