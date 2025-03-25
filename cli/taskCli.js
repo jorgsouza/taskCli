@@ -5,6 +5,8 @@ import { listTasks } from '../application/listTasks.js';
 import { deleteTask } from '../application/deleteTask.js';
 import { completeTask } from '../application/completeTask.js';
 import { recordTasks } from '../application/recordTasks.js';
+import { favoriteTask } from '../application/favoriteTask.js';
+import { editTask } from '../application/editTask.js';
 
 const program = new Command();
 
@@ -58,6 +60,23 @@ program
   .argument('<tasks...>', 'Lista de tarefas separadas por espaço')
   .action(async (tasks) => {
     await recordTasks(tasks);
+  });
+
+program
+  .command('favorite')
+  .description('Toggle favorite status of a task')
+  .argument('<id>', 'ID of the task')
+  .action(async (id) => {
+    await favoriteTask(id);
+  });
+
+program
+  .command('edit')
+  .description('Edit a task description')
+  .argument('<id>', 'ID of the task')
+  .argument('<description>', 'New description for the task')
+  .action(async (id, description) => {
+    await editTask(id, description);
   });
 
 program.parse();
