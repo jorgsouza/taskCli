@@ -1,0 +1,42 @@
+[
+  {
+    "id": "02d48eb1-9978-4455-a8da-ffb97bbdda70",
+    "description": "Analisar Query que o Zizao me enviou para pensar em um novo motor de busca, separado em pastas por agent, empresa, consumidor, e assim por diante",
+    "done": false,
+    "favorite": false,
+    "note": false,
+    "createdAt": "2025-03-24T13:52:39.941Z"
+  },
+  {
+    "id": "4b3d9931-ccd3-4d27-96d1-5370d67df10c",
+    "description": "cobrar a minha querida apaixonada Erlaine sobre as docs",
+    "done": false,
+    "favorite": false,
+    "note": false,
+    "createdAt": "2025-03-25T13:09:37.846Z"
+  },
+  {
+    "id": "5ad40beb-5137-4875-9d0e-2f470d0c227f",
+    "description": "criar um sumário para o agent",
+    "done": false,
+    "favorite": false,
+    "note": false,
+    "createdAt": "2025-03-25T13:11:03.475Z"
+  },
+  {
+    "id": "3925a70a-6475-404b-a594-734cbb607ee8",
+    "description": "QA -> Rejane - Fazer escrita de caso de testes antecipadamente",
+    "done": false,
+    "favorite": false,
+    "note": false,
+    "createdAt": "2025-03-25T14:37:23.085Z"
+  },
+  {
+    "id": "efbfcd00-4730-4aac-b8f2-6f0a6bed1493",
+    "description": "Falar com a Day sobre o eu estar distante, mas o time nao da espaco e que ja me posicionei e informei",
+    "done": false,
+    "favorite": false,
+    "note": true,
+    "createdAt": "2025-03-25T15:09:31.039Z"
+  }
+]

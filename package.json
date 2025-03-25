@@ -1,0 +1,23 @@
+{
+  "name": "task-cli",
+  "version": "1.0.0",
+  "description": "CLI de tarefas com DDD e DRY",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "task": "index.js"
+  },
+  "scripts": {
+    "make-executable": "chmod +x index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^11.1.0",
+    "dayjs": "^1.11.13",
+    "fs-extra": "^11.3.0",
+    "lodash.groupby": "^4.6.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
