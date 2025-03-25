@@ -15,7 +15,7 @@ program
 
 program
   .command('add')
-  .description('Adiciona uma nova tarefa')
+  .description('Adiciona uma nova tarefa (use --note para marcar como nota)')
   .argument('<desc>', 'Descrição da tarefa')
   .option('--note', 'Marca a tarefa como uma nota')
   .action(async (desc, options) => {
@@ -39,7 +39,7 @@ program
 
 program
   .command('delete')
-  .description('Exclui uma tarefa ou todas as tarefas concluídas')
+  .description('Exclui uma tarefa ou todas as tarefas concluídas (use --completed para excluir concluídas)')
   .argument('[id]', 'ID da tarefa (opcional)')
   .option('--completed', 'Exclui todas as tarefas concluídas')
   .action(async (id, options) => {

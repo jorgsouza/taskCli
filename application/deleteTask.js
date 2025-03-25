@@ -25,10 +25,6 @@ export async function deleteTask(taskIndex, options = {}) {
   }
 
   const task = tasks[index];
-  if (task.note) {
-    console.log(chalk.red('Notas não podem ser excluídas.'));
-    return;
-  }
 
   tasks.splice(index, 1); // Remove a tarefa pelo índice
   await TaskRepository.saveAll(tasks);
